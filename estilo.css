@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+
+/*
+#F5924C
+#EAD099
+#42DB84
+*/
+
+:root{
+    --laranja:#F5924C;
+    --nude:#EAD099;
+    --salmao:#F7664F;
+    --amarelo:#F7C94A;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:var(--nude);
+    font-family:"roboto",sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom,var(--amarelo),var(--salmao));/*(direção, a 1ª cor, 2ª cor)*/
+    min-height: 150px;/*altura minima/*
+    text-align: center; /*alinhamento do texto*/
+    padding-top: 50px; /*espaço da caixa*/
+}
+
+header > h1{
+color:bisque;
+font-weight: 900px;/*peso da expessura do negrito.*/
+margin-bottom: 20px;/*Espaço até o proximo elemento,no caso espaçamento no inferior*/
+}
+
+header> p{
+color:black;
+}
+
+/*header p{
+    color:rgb(220, 157, 94);
+}*/
+
+nav{
+    background-color:var(--salmao); /*cor variavel criada por mim no site*/
+    padding:10px; /* mesmo espaçamento para os quatros lados*/
+    box-shadow:2px  2px 2px red;/*(x, y, extensã de desfoque.*/
+}
+
+nav>a{
+color:black;
+padding:10px; /*espaço dentro da caixa*/
+text-decoration: none;/* tirar o sublinhado. none,overline,underline*/
+font-weight: bold; 
+border-radius: 3px; /* Arrendondamento das vérticis*/
+transition-duration: 0.5s;/* Duração da transição para outro estado*/
+
+} 
+
+nav>a:hover { /* pseudo-classe- adiciona um estado especial*/
+    background-color: black;
+    color:white;
+    /*font-size: 20px;*/
+}
+
+main{
+    background-color: beige;
+    min-width: 320px;/*largura minima*/
+    max-width: 8000px;/*largura máxima*/
+    margin:auto;/* nesse contexto, ultizilizada para centralizar o elemneto*/
+    margin-top: 5px;/* espaço de um elemento a outro*/
+    padding: 20px;/* arrendodamento borda inferior esquerda*/
+    border-bottom-left-radius: 20px;/*arrendodamento borda inferior direita*/
+    border-bottom-left-radius:10px ;/*sombra da caixa*/
+    box-shadow: 2px 2px 2px 2px;
+    text-align: center;/*alinhamento do text centralizado*/
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--laranja), transparent);
+    text-align: center;/*alinhamento de texto( centralizado -center)*/
+
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;/*alinhamento de texto: center left right justify*/
+    text-indent: 40px;/*Espaçamento de parágrafo*/
+    margin: 12px 0px; /*fora do elemento, 15px(top, bottom) 0(left,right)*/
+    line-height: 1.5em;/*Altura da linha*/
+}
+
+img{
+    width: 40%;
+    border:2px double black;/*espessura, estilo e cor*/
+}
+
+figcaption{
+    font-size: 12px; /*muda o tamanho da fonte*/
+}
+
+aside{
+background-color: var(--nude);
+padding: 10px;
+border-radius: 5px;
+}
+
+aside> ul{
+    list-style-position: inside;/*coloca os marcadores da lista dentro da caixa do elemento*/
+    text-align: justify;
+}
+
+aside>h3{
+background-color: var(--salmao);
+padding: 10px;
+margin: -15px -10px -0px -10px;
+border-radius: 10px 10px 0 0;
+
+}
+
+iframe{
+    margin-bottom: 20px;
+   
+}
+
+footer{
+    font-size: 12px;
+    /*background-color, color*/
+    text-align: center;
+    padding: 3px;
+}
+
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
